@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9A208C"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        android:onClick="dividing"
+        android:text="/"
+        android:textColor="#FFEAEA"
+        app:backgroundTint="#F5C6EC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputSecond" />
+
+    <Button
+        android:id="@+id/subtraction"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="22dp"
+        android:onClick="subtraction"
+        android:text="-"
+        android:textColor="#FFEAEA"
+        app:backgroundTint="#F5C6EC"
+        app:layout_constraintEnd_toStartOf="@+id/division"
+        app:layout_constraintTop_toBottomOf="@+id/inputSecond" />
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:onClick="adding"
+        android:text="+"
+        android:textColor="#FFEAEA"
+        app:backgroundTint="#F5C6EC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputSecond" />
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="100dp"
+        android:onClick="multiplication"
+        android:text="*"
+        android:textColor="#FFEAEA"
+        app:backgroundTint="#F5C6EC"
+        app:layout_constraintStart_toEndOf="@+id/addition"
+        app:layout_constraintTop_toBottomOf="@+id/inputSecond" />
+
+    <EditText
+        android:id="@+id/inputFirst"
+        android:layout_width="131dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="102dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#F5C6EC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="148dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="157dp"
+        android:gravity="center"
+        android:textColor="#F5C6EC"
+        android:textSize="30dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/division" />
+
+    <EditText
+        android:id="@+id/inputSecond"
+        android:layout_width="124dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="102dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#F5C6EC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputFirst" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
